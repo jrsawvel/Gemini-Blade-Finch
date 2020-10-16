@@ -1,0 +1,36 @@
+{{> header}}
+
+=> /tb   home
+
+# {{{feedtitle}}}
+
+=> {{{feedhomepage}}}    {{{feedhomepage}}}
+
+{{#feedsubtitleexists}}
+{{{feedsubtitle}}}
+{{/feedsubtitleexists}}
+
+{{#feedupdatedexists}}
+{{{feedupdated}}}
+{{/feedupdatedexists}}
+
+=> {{{feedurl}}}    {{{feedurl}}}
+
+---------------
+
+{{#itemsloop}}
+
+{{#itemtitleexists}}
+### {{{itemtitle}}}
+{{/itemtitleexists}}
+
+{{#itemsummaryexists}}
+{{{itemsummary}}}
+{{/itemsummaryexists}}
+
+=> /cgi-bin/gmipb.lua?{{{itemlink}}}    {{{itemupdated}}}
+
+---------------
+{{/itemsloop}}
+
+{{> footer}}

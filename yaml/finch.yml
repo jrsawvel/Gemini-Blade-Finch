@@ -1,0 +1,8 @@
+    site_name:                      Toledo Blade News
+    site_description:               Reading my subscription
+    home_page:                      gemini://sawv.org/tb
+    domain_name:                    domain.com
+    app_name:                       Finch 1.0
+    template_home:                  /home/gemini/finch/GeminiBladeFinch/tmpl
+    default_doc_root:               /home/gemini/docroot/tb
+    feeds_urls_file:                /home/gemini/finch/GeminiBladeFinch/feeds/feedsurls.txt

@@ -1,0 +1,8 @@
+Local News|https://www.toledoblade.com/rss/local
+News|https://www.toledoblade.com/rss/news
+Art|https://www.toledoblade.com/rss/art
+Opinion|https://www.toledoblade.com/rss/opinion
+Sports|https://www.toledoblade.com/rss/sports
+Business|https://www.toledoblade.com/rss/business
+Technology|https://www.toledoblade.com/rss/technology
+All|https://www.toledoblade.com/rss
