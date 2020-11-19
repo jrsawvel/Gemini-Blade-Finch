@@ -17,6 +17,7 @@ function html_links_to_gmi_links(str)
     for w, p, d, t, tw in rex.gmatch(str, "<a([\\s]+)href=\"(\\w+://)([.A-Za-z0-9?=:|;,_#^\\-/%+&~\\(\\)@!]+)\" target=\"_blank\">(.+?)</a>([\\s]*)", "is", nil) do
 
         local gmi_link = '\n\n=> ' .. p .. d .. '    ' .. t .. '\n\n'
+        gmi_link = string.gsub(gmi_link, "%%", "%%%%")
 
         str = rex.gsub(str , '<a' .. w .. 'href="' .. p .. d .. '" target="_blank">' .. t .. '</a>' .. tw, gmi_link , nil, "is")
     end
@@ -200,8 +201,8 @@ local t = {}
 
 local url = os.getenv("QUERY_STRING")
 
--- url = "http://www.toledoblade.com/a-e/art/2020/07/02/picasso-work-with-paper-examined-in-exhibition-cleveland-museum-of-art/stories/20200629112"
--- url = "http://www.toledoblade.com/opinion/editorials/2020/07/03/lost-badge-lost-faith-rossford-police-department/stories/20200616111"
+-- url = "https://www.toledoblade.com/local/Coronavirus/2020/11/19/lucas-county-issues-28-day-stay-at-home-advisory/stories/20201119094"
+
 
 if url == nil or url == "" then
     io.write("10 url=http://...\r\n")
