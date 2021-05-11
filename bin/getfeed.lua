@@ -170,10 +170,12 @@ for url_ctr=1, #urls do
 
                 if brief_summary ~= nil then
                     -- html_output = html_output .. '<p>\n' .. brief_summary .. '</p>\n'
+
                 end
 
-                -- item_hash.itemlink = utils.url_encode(link)
-                item_hash.itemlink = link
+
+                item_hash.itemlink = utils.url_encode(link)
+                -- item_hash.itemlink = link
                 item_hash.itemupdated = updated
 
                 feed_items_array[i] = item_hash

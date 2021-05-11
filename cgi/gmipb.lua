@@ -207,6 +207,7 @@ local url = os.getenv("QUERY_STRING")
 if url == nil or url == "" then
     io.write("10 url=http://...\r\n")
 else
+    url = url_decode(url)
     local body, code, headers, status = fetch_url(url)
 
     if code >= 300 then
